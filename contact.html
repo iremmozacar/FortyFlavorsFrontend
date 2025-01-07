@@ -130,13 +130,13 @@
     </div>
     <div class="row justify-content-center mb-5">
       <div class="col-md-2 text-center">
-        <div class="business-circle" onclick="selectBusiness('Burger King')">
+        <div class="business-circle" onclick="selectBusiness('Dünya Döner')">
           <img src="images/bg_1.webp" alt="Burger King">
         </div>
         <p class="mt-2">Dünya Döner</p>
       </div>
       <div class="col-md-2 text-center">
-        <div class="business-circle" onclick="selectBusiness('Dominos Pizza')">
+        <div class="business-circle" onclick="selectBusiness('39 Pizza')">
           <img src="images/category-1.webp" alt="Dominos Pizza">
         </div>
         <p class="mt-2">39 Pizza</p>
@@ -338,6 +338,45 @@
       messageInput.value = '';
     }
   }
+
+
+      // URL'den işletme adını al
+        function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+
+        // İşletmeyi seç ve sohbet ekranını başlat
+        function initializeChat() {
+          const businessName = getQueryParam('business');
+          if (businessName) {
+            document.getElementById('businessName').textContent = businessName;
+            document.getElementById('chatContainer').style.display = 'block';
+            document.getElementById('chatBody').innerHTML = `
+                <p class="system-message">${businessName} ile mesajlaşmaya başlamak için aşağıya yazın.</p>
+            `;
+          }
+        }
+
+        // Sayfa yüklendiğinde işletme seçimini kontrol et
+        window.onload = initializeChat;
+
+        // Mesaj gönderme işlemi
+        function sendMessage() {
+          const messageInput = document.getElementById('messageInput');
+          const chatBody = document.getElementById('chatBody');
+          const message = messageInput.value.trim();
+
+          if (message) {
+            const userMessage = document.createElement('div');
+            userMessage.className = 'user-message';
+            userMessage.textContent = message;
+            chatBody.appendChild(userMessage);
+
+            chatBody.scrollTop = chatBody.scrollHeight;
+            messageInput.value = '';
+          }
+        }
 </script>
 
 
