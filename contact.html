@@ -121,7 +121,7 @@
 
 <section class="ftco-section contact-section bg-light">
   <div class="container">
-    <!-- İşletme Seçimi -->
+
     <div class="row justify-content-center mb-4">
       <div class="col-md-8 text-center">
         <h3 class="mb-4">Bir İşletme Seçin</h3>
@@ -178,7 +178,7 @@
 </section>
 
 <style>
-  /* İşletme Seçimi */
+
   .business-circle {
     width: 120px;
     height: 120px;
@@ -201,7 +201,7 @@
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
   }
 
-  /* Sohbet Kutusu */
+
   .chat-box {
     border-radius: 15px;
     background-color: #fff;
@@ -294,22 +294,22 @@
 
 <script>
   function selectBusiness(businessName) {
-    // İşletme ismini sohbet ekranında göster
+
     document.getElementById('businessName').textContent = businessName;
 
-    // Sohbet ekranını görünür yap
+
     document.getElementById('chatContainer').style.display = 'block';
 
-    // Sohbet mesajlarını başlat
+  
     document.getElementById('chatBody').innerHTML = `
     <p class="system-message">${businessName} ile mesajlaşmaya başlamak için aşağıya yazın.</p>
   `;
 
-    // Sayfayı sohbet ekranına kaydır
+
     const chatContainer = document.getElementById('chatContainer');
     chatContainer.scrollIntoView({ behavior: 'smooth' });
 
-    // Mesaj giriş kutusuna odaklan
+ 
     document.getElementById('messageInput').focus();
   }
 
@@ -319,34 +319,34 @@
     const message = messageInput.value.trim();
 
     if (message) {
-      // Kullanıcı mesajını ekle
+   
       const userMessage = document.createElement('div');
       userMessage.className = 'user-message';
       userMessage.textContent = message;
       chatBody.appendChild(userMessage);
 
-      // İşletme yanıtını simüle et
+
       const reply = document.createElement('div');
       reply.className = 'business-message';
       reply.textContent = 'Teşekkürler, en kısa sürede size geri dönüş yapacağız.';
       chatBody.appendChild(reply);
 
-      // Sohbet ekranını en alta kaydır
+
       chatBody.scrollTop = chatBody.scrollHeight;
 
-      // Mesaj giriş kutusunu temizle
+
       messageInput.value = '';
     }
   }
 
 
-      // URL'den işletme adını al
+
         function getQueryParam(param) {
           const urlParams = new URLSearchParams(window.location.search);
           return urlParams.get(param);
         }
 
-        // İşletmeyi seç ve sohbet ekranını başlat
+       
         function initializeChat() {
           const businessName = getQueryParam('business');
           if (businessName) {
@@ -358,10 +358,10 @@
           }
         }
 
-        // Sayfa yüklendiğinde işletme seçimini kontrol et
+      
         window.onload = initializeChat;
 
-        // Mesaj gönderme işlemi
+      
         function sendMessage() {
           const messageInput = document.getElementById('messageInput');
           const chatBody = document.getElementById('chatBody');
