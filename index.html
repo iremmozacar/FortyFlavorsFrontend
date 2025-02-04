@@ -67,8 +67,8 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link">Ana Sayfa</a></li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">Lezzet Durakları</a>
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Lezzet Durakları</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
 							<a class="dropdown-item" href="all-stops.html">Tüm Duraklar</a>
 							<div class="dropdown-divider"></div>
@@ -83,10 +83,17 @@
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="popular-flavors.html">Popüler Tatlar</a>
 							<a class="dropdown-item" href="traditional-flavors.html">Geleneksel Lezzetler</a>
-						
+
 						</div>
+
+
 					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Mesaj Gönder</a></li>
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">
+							<span class="icon-user"></span> Üye Girişi
+						</a>
+					</li>
 					<li class="nav-item cta cta-colored">
 						<a href="cart.html" class="nav-link">
 							<span class="icon-shopping_cart"></span>[0]
@@ -94,388 +101,128 @@
 					</li>
 				</ul>
 			</div>
-					</li>
-				</ul>
-			</div>
+			</li>
+			</ul>
+		</div>
 		</div>
 	</nav>
 
 
 
-<section id="home-section" class="hero">
-	<div class="home-slider owl-carousel">
-		<div class="slider-item" style="background-image: url(images/bg_1.webp);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-					<div class="col-md-12 ftco-animate text-center">
-						<h1 class="mb-2">Şehrin Lezzet Durağı</h1>
-						<h2 class="subheading mb-4">Kırklareli eşsiz lezzetlerini keşfetmek için doğru yerdesiniz. </h2>
-						<p><a href="#" class="btn btn-primary">Detayları Gör</a></p>
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item" style="background-image: url(images/bg_1.webp);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+						<div class="col-md-12 ftco-animate text-center">
+							<h1 class="mb-2">Şehrin Lezzet Durağı</h1>
+							<h2 class="subheading mb-4">Kırklareli eşsiz lezzetlerini keşfetmek için doğru yerdesiniz.
+							</h2>
+							<p><a href="#" class="btn btn-primary">Detayları Gör</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="slider-item" style="background-image: url(images/bg_2.webp);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-					<div class="col-sm-12 ftco-animate text-center">
-						<h1 class="mb-2">Kırklareli'nın En İyi Lezzetleri</h1>
-						<h2 class="subheading mb-4">En sevdiğiniz restoranlardan
-						sipariş verin, dakikalar içinde kapınızda olsun!</h2>
-						<p><a href="#" class="btn btn-primary">Detayları Gör</a></p>
+			<div class="slider-item" style="background-image: url(images/bg_2.webp);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+						<div class="col-sm-12 ftco-animate text-center">
+							<h1 class="mb-2">Kırklareli'nın En İyi Lezzetleri</h1>
+							<h2 class="subheading mb-4">En sevdiğiniz restoranlardan
+								sipariş verin, dakikalar içinde kapınızda olsun!</h2>
+							<p><a href="#" class="btn btn-primary">Detayları Gör</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+
+
+
+	<!-- 
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row no-gutters ftco-services">
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+							<img src="kurye.png" alt="Kurye İkonu" class="icon-img">
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Hızlı Kurye</h3>
+							<span>Siparişleriniz en kısa sürede teslim edilir</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
+							<span class="flaticon-diet"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Her Zaman Taze</h3>
+							<span>Özenle paketlenmiş ürünler</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+							<span class="flaticon-award"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Üstün Kalite</h3>
+							<span>Kaliteli ürün garantisi</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+							<span class="flaticon-customer-service"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Müşteri Desteği</h3>
+							<span>7/24 Hizmetinizde</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<style>
+		.icon-img {
+			width: 40px;
+
+			height: 40px;
+			border-radius: 50%;
+
+			object-fit: cover;
+
+		}
+
+		.bg-color-1.active {
+			background-color: #f8c94e;
+
+		}
+	</style
 </section>
 
-
-
-
-<section class="ftco-section">
-	<div class="container">
-		<div class="row no-gutters ftco-services">
-			<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-				<div class="media block-6 services mb-md-0 mb-4">
-					<div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
-						<img src="kurye.png" alt="Kurye İkonu" class="icon-img">
-					</div>
-					<div class="media-body">
-						<h3 class="heading">Hızlı Kurye</h3>
-						<span>Siparişleriniz en kısa sürede teslim edilir</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-				<div class="media block-6 services mb-md-0 mb-4">
-					<div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
-						<span class="flaticon-diet"></span>
-					</div>
-					<div class="media-body">
-						<h3 class="heading">Her Zaman Taze</h3>
-						<span>Özenle paketlenmiş ürünler</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-				<div class="media block-6 services mb-md-0 mb-4">
-					<div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
-						<span class="flaticon-award"></span>
-					</div>
-					<div class="media-body">
-						<h3 class="heading">Üstün Kalite</h3>
-						<span>Kaliteli ürün garantisi</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-				<div class="media block-6 services mb-md-0 mb-4">
-					<div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
-						<span class="flaticon-customer-service"></span>
-					</div>
-					<div class="media-body">
-						<h3 class="heading">Müşteri Desteği</h3>
-						<span>7/24 Hizmetinizde</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<style>
-	.icon-img {
-		width: 40px;
-		
-		height: 40px;
-		border-radius: 50%;
-	
-		object-fit: cover;
-		
-	}
-
-	.bg-color-1.active {
-		background-color: #f8c94e;
-	
-	}
-</style>
-
-<section class="ftco-section ftco-category ftco-no-pt">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="row">
-					<div class="col-md-6 order-md-last align-items-stretch d-flex">
-						<div class="category-wrap-2 ftco-animate img align-self-stretch d-flex"
-							style="background-image: url(images/category.jpg);">
-							<div class="text text-center">
-								<h2>Tüm Yemekler</h2>
-								<p></p>
-								<p><a href="#" class="btn btn-primary">Şimdi Sipariş Ver</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
-							style="background-image: url(images/category-1.webp);">
-							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="#">Hamburger</a></h2>
-							</div>
-						</div>
-						<div class="category-wrap ftco-animate img d-flex align-items-end"
-							style="background-image: url(images/category-2.webp);">
-							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="#">Köfte</a></h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
-					style="background-image: url(images/category-3.webp);">
-					<div class="text px-3 py-1">
-						<h2 class="mb-0"><a href="#">Tavuk</a></h2>
-					</div>
-				</div>
-				<div class="category-wrap ftco-animate img d-flex align-items-end"
-					style="background-image: url(images/category-4.webp);">
-					<div class="text px-3 py-1">
-						<h2 class="mb-0"><a href="#">Tantuni</a></h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<section class="ftco-section">
-	<div class="container">
-		<div class="row justify-content-center mb-3 pb-3">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-				<h2 class="mb-4">İşletmeler ve Ürünler</h2>
-				<p>Her işletmeden en özel ürünleri keşfedin ve iletişim kurun.</p>
-			</div>
-		</div>
-
-		<div class="business-products">
-	
-			<div class="business-block">
-				<div class="business-header">
-					<h3>Burger 39</h3>
-				<div class="underline">
-					<button class="btn btn-message" onclick="redirectToContact('Dünya Döner')">Mesaj Gönder</button>
-				</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg"
-									alt="Ürün Görseli">
-								<div class="overlay"></div>
-							</a>
-							<div class="text py-3 pb-4 px-3 text-center">
-								<h3><a href="#">Burger Menü</a></h3>
-								<div class="pricing">
-									<p class="price"><span>₺80.00</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg"
-									alt="Ürün Görseli">
-								<div class="overlay"></div>
-							</a>
-							<div class="text py-3 pb-4 px-3 text-center">
-								<h3><a href="#">Patates Kızartması</a></h3>
-								<div class="pricing">
-									<p class="price"><span>₺25.00</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		
-			<div class="business-block">
-				<div class="business-header">
-					<h3>Isabella Pizza</h3>
-					<div class="underline">
-						<button class="btn btn-message" onclick="redirectToContact('Dünya Döner')">Mesaj Gönder</button>
-					</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg"
-									alt="Ürün Görseli">
-								<div class="overlay"></div>
-							</a>
-							<div class="text py-3 pb-4 px-3 text-center">
-								<h3><a href="#">Büyük Boy Pizza</a></h3>
-								<div class="pricing">
-									<p class="price"><span>₺120.00</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg"
-									alt="Ürün Görseli">
-								<div class="overlay"></div>
-							</a>
-							<div class="text py-3 pb-4 px-3 text-center">
-								<h3><a href="#">Çikolatalı Sufle</a></h3>
-								<div class="pricing">
-									<p class="price"><span>₺40.00</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-<div class="business-block">
-	<div class="business-header">
-		<h3>Dünya Döner</h3>
-		<div class="underline">
-			<button class="btn btn-message" onclick="redirectToContact('Dünya Döner')">Mesaj Gönder</button>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6 col-lg-3 ftco-animate">
-			<div class="product">
-				<a href="#" class="img-prod"><img class="img-fluid" src="images/product-5.jpg" alt="Ürün Görseli">
-					<div class="overlay"></div>
-				</a>
-				<div class="text py-3 pb-4 px-3 text-center">
-					<h3><a href="#">Et Döner Menü</a></h3>
-					<div class="pricing">
-						<p class="price"><span>₺75.00</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 col-lg-3 ftco-animate">
-			<div class="product">
-				<a href="#" class="img-prod"><img class="img-fluid" src="images/product-6.jpg" alt="Ürün Görseli">
-					<div class="overlay"></div>
-				</a>
-				<div class="text py-3 pb-4 px-3 text-center">
-					<h3><a href="#">Tavuk Döner Menü</a></h3>
-					<div class="pricing">
-						<p class="price"><span>₺55.00</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="business-block">
-	<div class="business-header">
-		<h3>Kebapçı Mehmet</h3>
-	<div class="underline">
-		<button class="btn btn-message" onclick="redirectToContact('Dünya Döner')">Mesaj Gönder</button>
-	</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6 col-lg-3 ftco-animate">
-			<div class="product">
-				<a href="#" class="img-prod"><img class="img-fluid" src="images/product-7.jpg" alt="Ürün Görseli">
-					<div class="overlay"></div>
-				</a>
-				<div class="text py-3 pb-4 px-3 text-center">
-					<h3><a href="#">Adana Kebap</a></h3>
-					<div class="pricing">
-						<p class="price"><span>₺85.00</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 col-lg-3 ftco-animate">
-			<div class="product">
-				<a href="#" class="img-prod"><img class="img-fluid" src="images/product-8.jpg" alt="Ürün Görseli">
-					<div class="overlay"></div>
-				</a>
-				<div class="text py-3 pb-4 px-3 text-center">
-					<h3><a href="#">Urfa Kebap</a></h3>
-					<div class="pricing">
-						<p class="price"><span>₺80.00</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<style>
-.business-header {
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.business-header h3 {
-	position: absolute;
-	top: 5px; 
-	left: 5px;
-	font-size: 21px;
-	font-weight: none;
-	color: #ffffff;
-	background: none;
-	padding: 0 10px;
-	z-index: 1; 
-}
-
-.underline {
-	position: relative;
-	width: 100%;
-	height: 5-px; 
-	background-color: #b8cb9f;
-	margin: 20px 0;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	border-radius: 10px;
-}
-
-.btn-message {
-	background-color: #82ae46;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-	margin-right: 0px;
-}
-
-.btn-message:hover {
-	background-color: #6f933b;
-}
-</style>
-<script>
-	function redirectToContact(businessName) {
-	
-		window.location.href = `contact.html?business=${encodeURIComponent(businessName)}`;
-	}
-</script>
-
-<!-- 
+	<!-- 
 <section class="ftco-section">
 	<div class="container">
 		<div class="row">
@@ -600,189 +347,187 @@
 		</div>
 	</div>
 </section> -->
-<section class="ftco-section img" style="background-image: url(images/bg_333.png);">
-	<div class="container">
-		<div class="row justify-content-end">
-			<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
-				<span class="subheading">Sizin İçin En İyi Fiyat</span>
-				<h2 class="mb-4">Günün Fırsatı</h2>
-				<p>Uzak diyarların ardındaki lezzetli ürünler burada sizi bekliyor.</p>
-				<h3><a href="#">Ispanak</a></h3>
-				<span class="price">₺10 <a href="#">şimdi sadece ₺5</a></span>
-				<div id="timer" class="d-flex mt-5">
-					<div class="time" id="days"></div>
-					<div class="time pl-3" id="hours"></div>
-					<div class="time pl-3" id="minutes"></div>
-					<div class="time pl-3" id="seconds"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="ftco-section testimony-section">
-	<div class="container">
-		<div class="row justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section ftco-animate text-center">
-				<span class="subheading">İşletme Sahipleri Anlatıyor</span>
-				<h2 class="mb-4">Bizi ve İşletmelerimizi Tanıyın</h2>
-				<p>Her işletmenin ardında bir hikaye ve tutku var. İşte işletme sahiplerimizin sözleriyle bu hikayeler.
-				</p>
-			</div>
-		</div>
-		<div class="row ftco-animate">
-			<div class="col-md-12">
-				<div class="carousel-testimony owl-carousel">
-					<!-- Burger 39 Kırklareli -->
-					<div class="item">
-						<div class="testimony-wrap p-4 pb-5">
-							<div class="user-img mb-5" style="background-image: url(images/.jpg)">
-								<span class="quote d-flex align-items-center justify-content-center">
-									<i class="icon-quote-left"></i>
-								</span>
-							</div>
-							<div class="text text-center">
-								<p class="mb-5 pl-4 line">"Burger 39 Kırklareli olarak, en taze malzemelerle
-									hazırladığımız burgerlerimizle lezzeti sizlere sunmaktan gurur duyuyoruz.
-									Müşterilerimizin memnuniyeti bizim en büyük önceliğimizdir."</p>
-								<p class="name">Ahmet Yıldız</p>
-								<span class="position">Burger 39 Kırklareli İşletme Sahibi</span>
-							</div>
-						</div>
-					</div>
-
-		
-					<div class="item">
-						<div class="testimony-wrap p-4 pb-5">
-							<div class="user-img mb-5" style="background-image: url(images/person_.jpg)">
-								<span class="quote d-flex align-items-center justify-content-center">
-									<i class="icon-quote-left"></i>
-								</span>
-							</div>
-							<div class="text text-center">
-								<p class="mb-5 pl-4 line">"Dünya Döner olarak her bir dönerimizi sevgiyle ve özenle
-									hazırlıyoruz. Geleneksel lezzetleri modern bir dokunuşla birleştirerek sizlere
-									sunuyoruz."</p>
-								<p class="name">Mehmet Karaca</p>
-								<span class="position">Dünya Döner İşletme Sahibi</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="testimony-wrap p-4 pb-5">
-							<div class="user-img mb-5" style="background-image: url(images/person_.jpg)">
-								<span class="quote d-flex align-items-center justify-content-center">
-									<i class="icon-quote-left"></i>
-								</span>
-							</div>
-							<div class="text text-center">
-								<p class="mb-5 pl-4 line">"Kebapçı Mehmet'te, otantik kebap lezzetlerini en kaliteli
-									malzemelerle sunarak müşterilerimize unutulmaz bir yemek deneyimi yaşatıyoruz. Her
-									kebap bir sanat eseri bizim için."</p>
-								<p class="name">Mehmet Aksoy</p>
-								<span class="position">Kebapçı Mehmet İşletme Sahibi</span>
-							</div>
-						</div>
-					</div>
-
-			
-					<div class="item">
-						<div class="testimony-wrap p-4 pb-5">
-							<div class="user-img mb-5" style="background-image: url(images/person_.jpg)">
-								<span class="quote d-flex align-items-center justify-content-center">
-									<i class="icon-quote-left"></i>
-								</span>
-							</div>
-							<div class="text text-center">
-								<p class="mb-5 pl-4 line">"Tatlıcı Ayşe olarak, geleneksel Türk tatlılarını el emeğiyle
-									hazırlıyoruz. Her tatlımızda aile sıcaklığını ve sevgisini hissetmenizi istiyoruz."
-								</p>
-								<p class="name">Ayşe Demir</p>
-								<span class="position">Tatlıcı Ayşe İşletme Sahibi</span>
-							</div>
-						</div>
+	<section class="ftco-section img" style="background-image: url(images/bg_333.png);">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
+					<span class="subheading">Sizin İçin En İyi Fiyat</span>
+					<h2 class="mb-4">Günün Fırsatı</h2>
+					<p>Uzak diyarların ardındaki lezzetli ürünler burada sizi bekliyor.</p>
+					<h3><a href="#">Ispanak</a></h3>
+					<span class="price">₺10 <a href="#">şimdi sadece ₺5</a></span>
+					<div id="timer" class="d-flex mt-5">
+						<div class="time" id="days"></div>
+						<div class="time pl-3" id="hours"></div>
+						<div class="time pl-3" id="minutes"></div>
+						<div class="time pl-3" id="seconds"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+	<section class="ftco-section testimony-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<span class="subheading">İşletme Sahipleri Anlatıyor</span>
+					<h2 class="mb-4">Bizi ve İşletmelerimizi Tanıyın</h2>
+					<p>Her işletmenin ardında bir hikaye ve tutku var. İşte işletme sahiplerimizin sözleriyle bu
+						hikayeler.
+					</p>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<!-- Burger 39 Kırklareli -->
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">"Burger 39 Kırklareli olarak, en taze malzemelerle
+										hazırladığımız burgerlerimizle lezzeti sizlere sunmaktan gurur duyuyoruz.
+										Müşterilerimizin memnuniyeti bizim en büyük önceliğimizdir."</p>
+									<p class="name">Ahmet Yıldız</p>
+									<span class="position">Burger 39 Kırklareli İşletme Sahibi</span>
+								</div>
+							</div>
+						</div>
 
-<hr>
 
-<section class="ftco-section ftco-partner">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="images/burger39.png" class="img-fluid" alt="Ortak 1"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="images/kırklarelidöner.png" class="img-fluid" alt="Ortak 2"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="images/kebapcimehmet.png" class="img-fluid" alt="Ortak 3"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="images/isabellapizza.png" class="img-fluid" alt="Ortak 4"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="images/dünyadoner.png" class="img-fluid" alt="Ortak 5"></a>
-			</div>
-		</div>
-	</div>
-</section>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/person_.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">"Dünya Döner olarak her bir dönerimizi sevgiyle ve özenle
+										hazırlıyoruz. Geleneksel lezzetleri modern bir dokunuşla birleştirerek sizlere
+										sunuyoruz."</p>
+									<p class="name">Mehmet Karaca</p>
+									<span class="position">Dünya Döner İşletme Sahibi</span>
+								</div>
+							</div>
+						</div>
 
-<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-	<div class="container py-4">
-		<div class="row d-flex justify-content-center py-5">
-			<div class="col-md-6">
-				<h2 style="font-size: 22px;" class="mb-0">Bültenimize Abone Olun</h2>
-				<span>En son mağazalarımız ve özel tekliflerimiz hakkında e-posta alın</span>
-			</div>
-			<div class="col-md-6 d-flex align-items-center">
-				<form action="#" class="subscribe-form">
-					<div class="form-group d-flex">
-						<input type="text" class="form-control" placeholder="E-posta adresinizi girin">
-						<input type="submit" value="Abone Ol" class="submit px-3">
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/person_.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">"Kebapçı Mehmet'te, otantik kebap lezzetlerini en kaliteli
+										malzemelerle sunarak müşterilerimize unutulmaz bir yemek deneyimi yaşatıyoruz.
+										Her
+										kebap bir sanat eseri bizim için."</p>
+									<p class="name">Mehmet Aksoy</p>
+									<span class="position">Kebapçı Mehmet İşletme Sahibi</span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/person_.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">"Tatlıcı Ayşe olarak, geleneksel Türk tatlılarını el
+										emeğiyle
+										hazırlıyoruz. Her tatlımızda aile sıcaklığını ve sevgisini hissetmenizi
+										istiyoruz."
+									</p>
+									<p class="name">Ayşe Demir</p>
+									<span class="position">Tatlıcı Ayşe İşletme Sahibi</span>
+								</div>
+							</div>
+						</div>
 					</div>
-				</form>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer class="ftco-footer ftco-section">
-	<div class="container">
-		<div class="row">
-			<div class="mouse">
-				<a href="#" class="mouse-icon">
+	<hr>
+
+	<section class="ftco-section ftco-partner">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm ftco-animate">
+					<a href="#" class="partner"><img src="images/burger39.png" class="img-fluid" alt="Ortak 1"></a>
+				</div>
+				<div class="col-sm ftco-animate">
+					<a href="#" class="partner"><img src="images/kırklarelidöner.png" class="img-fluid"
+							alt="Ortak 2"></a>
+				</div>
+				<div class="col-sm ftco-animate">
+					<a href="#" class="partner"><img src="images/kebapcimehmet.png" class="img-fluid" alt="Ortak 3"></a>
+				</div>
+				<div class="col-sm ftco-animate">
+					<a href="#" class="partner"><img src="images/isabellapizza.png" class="img-fluid" alt="Ortak 4"></a>
+				</div>
+				<div class="col-sm ftco-animate">
+					<a href="#" class="partner"><img src="images/dünyadoner.png" class="img-fluid" alt="Ortak 5"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+		<div class="container py-4">
+			<div class="row d-flex justify-content-center text-center">
+				<div class="col-md-8">
+					<h2 style="font-size: 24px;" class="mb-3">Üye Olmak İster Misiniz?</h2>
+					<p>Mağazalarımız ve özel tekliflerimizden haberdar olmak için hemen üye olun!</p>
+					<a href="register.html" class="btn btn-primary mt-3">Hemen Üye Ol</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="mouse">
+					<!-- <a href="#" class="mouse-icon"> -->
 					<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
-				</a>
-			</div>
-		</div>
-		<div class="row mb-5">
-			<div class="col-md">
-				<div class="ftco-footer-widget mb-4">
-					<h2 class="ftco-heading-2">KırkLezzet</h2>
-					<p>Kırklarelinin en lezzetli yemekleri burada!</p>
-					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-					</ul>
+					</a>
 				</div>
 			</div>
-			<div class="col-md">
-				<div class="ftco-footer-widget mb-4 ml-md-5">
-					<h2 class="ftco-heading-2">Menü</h2>
-					<ul class="list-unstyled">
-						<li><a href="#" class="py-2 d-block">Mağaza</a></li>
-						<li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
-						<li><a href="#" class="py-2 d-block">Günlük</a></li>
-						<li><a href="#" class="py-2 d-block">Bize Ulaşın</a></li>
-					</ul>
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">KırkLezzet</h2>
+						<p>Kırklarelinin en lezzetli yemekleri burada!</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
 				</div>
-			<!-- </div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-5">
+						<h2 class="ftco-heading-2">Menü</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">Mağaza</a></li>
+							<li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
+							<li><a href="#" class="py-2 d-block">Günlük</a></li>
+							<li><a href="#" class="py-2 d-block">Bize Ulaşın</a></li>
+						</ul>
+					</div>
+					<!-- </div>
 			<div class="col-md-4">
 				<div class="ftco-footer-widget mb-4">
 					<h2 class="ftco-heading-2">Yardım</h2>
@@ -800,7 +545,7 @@
 					</div>
 				</div>
 			</div> -->
-			<!-- <div class="col-md">
+					<!-- <div class="col-md">
 				<div class="ftco-footer-widget mb-4">
 					<h2 class="ftco-heading-2">Sorularınız mı Var?</h2>
 					<div class="block-23 mb-3">
@@ -815,42 +560,48 @@
 					</div>
 				</div>
 			</div> -->
-		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<p>
-					Tüm Hakları Saklıdır &copy;
-					<script>document.write(new Date().getFullYear());</script> | Bu şablon <i
-						class="icon-heart color-danger" aria-hidden="true"></i> ile <a href="https://colorlib.com"
-						target="_blank">Colorlib</a> tarafından yapılmıştır.
-				</p>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							Tüm Hakları Saklıdır &copy;
+							<script>document.write(new Date().getFullYear());</script> | Bu şablon <i
+								class="icon-heart color-danger" aria-hidden="true"></i> ile <a
+								href="https://colorlib.com" target="_blank">Colorlib</a> tarafından yapılmıştır.
+						</p>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</footer>
-
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	</footer>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
 </html>

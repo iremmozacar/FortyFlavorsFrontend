@@ -99,287 +99,283 @@
     </div>
     </div>
   </nav>
-    <!-- END nav -->
+  <!-- END nav -->
 
 
 
 
 
-<div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.webp');">
-  <div class="container">
-    <div class="row no-gutters slider-text align-items-center justify-content-center">
-      <div class="col-md-9 ftco-animate text-center">
-        <!-- <h1 class="mb-0 bread">Mesaj Gönder</h1>
+  <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.webp');">
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <!-- <h1 class="mb-0 bread">Mesaj Gönder</h1>
         <p class="breadcrumbs">
           <span class="mr-2"><a href="index.html">Ana Sayfa</a></span>
           <span>Mesaj Gönder</span> -->
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="ftco-section contact-section bg-light">
-  <div class="container">
-
-    <div class="row justify-content-center mb-4">
-      <div class="col-md-8 text-center">
-        <h3 class="mb-4">Bir İşletme Seçin</h3>
-        <p class="text-muted">Sohbet başlatmak istediğiniz işletmeyi seçin.</p>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-2 text-center">
-        <div class="business-circle" onclick="selectBusiness('Dünya Döner')">
-          <img src="images/bg_1.webp" alt="Burger King">
-        </div>
-        <p class="mt-2">Dünya Döner</p>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="business-circle" onclick="selectBusiness('39 Pizza')">
-          <img src="images/category-1.webp" alt="Dominos Pizza">
-        </div>
-        <p class="mt-2">39 Pizza</p>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="business-circle" onclick="selectBusiness('Kebapçı Mehmet')">
-          <img src="images/category-3.webp" alt="Kebapçı Mehmet">
-        </div>
-        <p class="mt-2">Kebapçı Mehmet</p>
-      </div>
-      <div class="col-md-2 text-center">
-        <div class="business-circle" onclick="selectBusiness('Tatlıcı Ayşe')">
-          <img src="images/category-4.webp" alt="Tatlıcı Ayşe">
-        </div>
-        <p class="mt-2">Tatlıcı Ayşe</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sohbet Ekranı -->
-  <div class="container chat-container" id="chatContainer" style="display: none;">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="chat-box shadow-lg">
-          <div class="chat-header">
-            <h5 id="businessName" class="mb-0">Sohbet</h5>
-          </div>
-          <div class="chat-body" id="chatBody">
-            <p class="system-message">Mesajlaşmayı başlatmak için aşağıya yazın.</p>
-          </div>
-          <div class="chat-footer">
-            <input type="text" class="form-control chat-input" id="messageInput" placeholder="Mesajınızı yazın...">
-            <button type="button" class="btn btn-success chat-send" onclick="sendMessage()">Gönder</button>
-          </div>
+          </p>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<style>
+  <section class="ftco-section contact-section bg-light">
+    <div class="container">
 
-  .business-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto;
-    border: 3px solid #82ae46;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-  }
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8 text-center">
+          <h3 class="mb-4">Bir İşletme Seçin</h3>
+          <p class="text-muted">Sohbet başlatmak istediğiniz işletmeyi seçin.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-2 text-center">
+          <div class="business-circle" onclick="selectBusiness('Dünya Döner')">
+            <img src="images/bg_1.webp" alt="Burger King">
+          </div>
+          <p class="mt-2">Dünya Döner</p>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="business-circle" onclick="selectBusiness('39 Pizza')">
+            <img src="images/category-1.webp" alt="Dominos Pizza">
+          </div>
+          <p class="mt-2">39 Pizza</p>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="business-circle" onclick="selectBusiness('Kebapçı Mehmet')">
+            <img src="images/category-3.webp" alt="Kebapçı Mehmet">
+          </div>
+          <p class="mt-2">Kebapçı Mehmet</p>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="business-circle" onclick="selectBusiness('Tatlıcı Ayşe')">
+            <img src="images/category-4.webp" alt="Tatlıcı Ayşe">
+          </div>
+          <p class="mt-2">Tatlıcı Ayşe</p>
+        </div>
+      </div>
+    </div>
 
-  .business-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    <!-- Sohbet Ekranı -->
+    <div class="container chat-container" id="chatContainer" style="display: none;">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="chat-box shadow-lg">
+            <div class="chat-header">
+              <h5 id="businessName" class="mb-0">Sohbet</h5>
+            </div>
+            <div class="chat-body" id="chatBody">
+              <p class="system-message">Mesajlaşmayı başlatmak için aşağıya yazın.</p>
+            </div>
+            <div class="chat-footer">
+              <input type="text" class="form-control chat-input" id="messageInput" placeholder="Mesajınızı yazın...">
+              <button type="button" class="btn btn-success chat-send" onclick="sendMessage()">Gönder</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  .business-circle:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  }
+  <style>
+    .business-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto;
+      border: 3px solid #b40202;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
 
+    .business-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-  .chat-box {
-    border-radius: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    overflow: hidden;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .chat-header {
-    padding: 15px;
-    background-color: #82ae46;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .chat-body {
-    height: 400px;
-    overflow-y: auto;
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-
-  .chat-footer {
-    display: flex;
-    padding: 15px;
-    background-color: #f1f1f1;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .chat-input {
-    flex-grow: 1;
-    border-radius: 20px;
-    padding: 10px 15px;
-    border: 1px solid #82ae46;
-  }
-
-  .chat-input:focus {
-    outline: none;
-    border-color: #82ae46;
-    box-shadow: 0 0 5px #82ae46(0, 128, 0, 0.5);
-    
-  }
-
-  .chat-send {
-    padding: 10px 20px;
-    border-radius: 20px;
-        background-color: #82ae46;
-    border-color: #82ae46;
-    color: white;
-  }
-  .chat-send:hover {
-    background-color: #6f933b;
-    border-color: #6f933b;
-  }
+    .business-circle:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    }
 
 
-  .chat-body .system-message {
-    color: #888;
-    font-size: 14px;
-    text-align: center;
-  }
+    .chat-box {
+      border-radius: 15px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-  .chat-body .user-message {
-    background-color: #82ae46;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin: 10px 0;
-    align-self: flex-end;
-    max-width: 75%;
-    display: inline-block;
-  }
+    .chat-header {
+      padding: 15px;
+      background-color: #930303;
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-  .chat-body .business-message {
-    background-color: #ddd;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin: 10px 0;
-    align-self: flex-start;
-    max-width: 75%;
-    display: inline-block;
-  }
+    .chat-body {
+      height: 400px;
+      overflow-y: auto;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
 
-  
-</style>
+    .chat-footer {
+      display: flex;
+      padding: 15px;
+      background-color: #f1f1f1;
+      align-items: center;
+      gap: 10px;
+    }
 
-<script>
-  function selectBusiness(businessName) {
+    .chat-input {
+      flex-grow: 1;
+      border-radius: 20px;
+      padding: 10px 15px;
+      border: 1px solid #b40202;
+    }
 
-    document.getElementById('businessName').textContent = businessName;
+    .chat-input:focus {
+      outline: none;
+      border-color: #b40202;
+      box-shadow: 0 0 5px #b40202(0, 128, 0, 0.5);
+
+    }
+
+    .chat-send {
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #b40202;
+      border-color: #b40202;
+      color: white;
+    }
+
+    .chat-send:hover {
+      background-color: #6f933b;
+      border-color: #6f933b;
+    }
 
 
-    document.getElementById('chatContainer').style.display = 'block';
+    .chat-body .system-message {
+      color: #888;
+      font-size: 14px;
+      text-align: center;
+    }
 
-  
-    document.getElementById('chatBody').innerHTML = `
+    .chat-body .user-message {
+      background-color: #b40202;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 15px;
+      margin: 10px 0;
+      align-self: flex-end;
+      max-width: 75%;
+      display: inline-block;
+    }
+
+    .chat-body .business-message {
+      background-color: #ddd;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 15px;
+      margin: 10px 0;
+      align-self: flex-start;
+      max-width: 75%;
+      display: inline-block;
+    }
+  </style>
+
+  <script>
+    function selectBusiness(businessName) {
+
+      document.getElementById('businessName').textContent = businessName;
+
+
+      document.getElementById('chatContainer').style.display = 'block';
+
+
+      document.getElementById('chatBody').innerHTML = `
     <p class="system-message">${businessName} ile mesajlaşmaya başlamak için aşağıya yazın.</p>
   `;
 
 
-    const chatContainer = document.getElementById('chatContainer');
-    chatContainer.scrollIntoView({ behavior: 'smooth' });
-
- 
-    document.getElementById('messageInput').focus();
-  }
-
-  function sendMessage() {
-    const messageInput = document.getElementById('messageInput');
-    const chatBody = document.getElementById('chatBody');
-    const message = messageInput.value.trim();
-
-    if (message) {
-   
-      const userMessage = document.createElement('div');
-      userMessage.className = 'user-message';
-      userMessage.textContent = message;
-      chatBody.appendChild(userMessage);
+      const chatContainer = document.getElementById('chatContainer');
+      chatContainer.scrollIntoView({ behavior: 'smooth' });
 
 
-      const reply = document.createElement('div');
-      reply.className = 'business-message';
-      reply.textContent = 'Teşekkürler, en kısa sürede size geri dönüş yapacağız.';
-      chatBody.appendChild(reply);
-
-
-      chatBody.scrollTop = chatBody.scrollHeight;
-
-
-      messageInput.value = '';
+      document.getElementById('messageInput').focus();
     }
-  }
+
+    function sendMessage() {
+      const messageInput = document.getElementById('messageInput');
+      const chatBody = document.getElementById('chatBody');
+      const message = messageInput.value.trim();
+
+      if (message) {
+
+        const userMessage = document.createElement('div');
+        userMessage.className = 'user-message';
+        userMessage.textContent = message;
+        chatBody.appendChild(userMessage);
+
+
+        const reply = document.createElement('div');
+        reply.className = 'business-message';
+        reply.textContent = 'Teşekkürler, en kısa sürede size geri dönüş yapacağız.';
+        chatBody.appendChild(reply);
+
+
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+
+        messageInput.value = '';
+      }
+    }
 
 
 
-        function getQueryParam(param) {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get(param);
-        }
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
 
-       
-        function initializeChat() {
-          const businessName = getQueryParam('business');
-          if (businessName) {
-            document.getElementById('businessName').textContent = businessName;
-            document.getElementById('chatContainer').style.display = 'block';
-            document.getElementById('chatBody').innerHTML = `
+
+    function initializeChat() {
+      const businessName = getQueryParam('business');
+      if (businessName) {
+        document.getElementById('businessName').textContent = businessName;
+        document.getElementById('chatContainer').style.display = 'block';
+        document.getElementById('chatBody').innerHTML = `
                 <p class="system-message">${businessName} ile mesajlaşmaya başlamak için aşağıya yazın.</p>
             `;
-          }
-        }
-
-      
-        window.onload = initializeChat;
-
-      
-        function sendMessage() {
-          const messageInput = document.getElementById('messageInput');
-          const chatBody = document.getElementById('chatBody');
-          const message = messageInput.value.trim();
-
-          if (message) {
-            const userMessage = document.createElement('div');
-            userMessage.className = 'user-message';
-            userMessage.textContent = message;
-            chatBody.appendChild(userMessage);
-
-            chatBody.scrollTop = chatBody.scrollHeight;
-            messageInput.value = '';
-          }
-        }
-</script>
+      }
+    }
 
 
+    window.onload = initializeChat;
+
+
+    function sendMessage() {
+      const messageInput = document.getElementById('messageInput');
+      const chatBody = document.getElementById('chatBody');
+      const message = messageInput.value.trim();
+
+      if (message) {
+        const userMessage = document.createElement('div');
+        userMessage.className = 'user-message';
+        userMessage.textContent = message;
+        chatBody.appendChild(userMessage);
+
+        chatBody.scrollTop = chatBody.scrollHeight;
+        messageInput.value = '';
+      }
+    }
+  </script>
 
 
 
@@ -392,110 +388,114 @@
 
 
 
-    
-<footer class="ftco-footer ftco-section">
-  <div class="container">
-    <div class="row">
-      <div class="mouse">
-        <a href="#" class="mouse-icon">
-          <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
-        </a>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">KırkLezzet </h2>
-          <p>Uzak diyarlardan gelen en taze ve sağlıklı ürünler burada.</p>
-          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-          </ul>
+
+
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="mouse">
+          <a href="#" class="mouse-icon">
+            <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+          </a>
         </div>
       </div>
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4 ml-md-5">
-          <h2 class="ftco-heading-2">Menü</h2>
-          <ul class="list-unstyled">
-            <li><a href="#" class="py-2 d-block">Mağaza</a></li>
-            <li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
-            <li><a href="#" class="py-2 d-block">Günlük</a></li>
-            <li><a href="#" class="py-2 d-block">Bize Ulaşın</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Yardım</h2>
-          <div class="d-flex">
-            <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-              <li><a href="#" class="py-2 d-block">Kargo Bilgisi</a></li>
-              <li><a href="#" class="py-2 d-block">İade ve Değişim</a></li>
-              <li><a href="#" class="py-2 d-block">Şartlar ve Koşullar</a></li>
-              <li><a href="#" class="py-2 d-block">Gizlilik Politikası</a></li>
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">KırkLezzet </h2>
+            <p>Uzak diyarlardan gelen en taze ve sağlıklı ürünler burada.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
             </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Menü</h2>
             <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">SSS</a></li>
-              <li><a href="#" class="py-2 d-block">İletişim</a></li>
+              <li><a href="#" class="py-2 d-block">Mağaza</a></li>
+              <li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
+              <li><a href="#" class="py-2 d-block">Günlük</a></li>
+              <li><a href="#" class="py-2 d-block">Bize Ulaşın</a></li>
             </ul>
           </div>
         </div>
-      </div>
-      <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Sorularınız mı Var?</h2>
-          <div class="block-23 mb-3">
-            <ul>
-              <li><span class="icon icon-map-marker"></span><span class="text">203 Sahte Sokak, Dağ
-                  Manzarası, San Francisco, Kaliforniya, ABD</span></li>
-              <li><a href="#"><span class="icon icon-phone"></span><span class="text">+90 123 456 78
-                    90</span></a></li>
-              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@siteniz.com</span></a>
-              </li>
-            </ul>
+        <div class="col-md-4">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Yardım</h2>
+            <div class="d-flex">
+              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+                <li><a href="#" class="py-2 d-block">Kargo Bilgisi</a></li>
+                <li><a href="#" class="py-2 d-block">İade ve Değişim</a></li>
+                <li><a href="#" class="py-2 d-block">Şartlar ve Koşullar</a></li>
+                <li><a href="#" class="py-2 d-block">Gizlilik Politikası</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">SSS</a></li>
+                <li><a href="#" class="py-2 d-block">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Sorularınız mı Var?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">203 Sahte Sokak, Dağ
+                    Manzarası, San Francisco, Kaliforniya, ABD</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+90 123 456 78
+                      90</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@siteniz.com</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>
-          Tüm Hakları Saklıdır &copy;
-          <script>document.write(new Date().getFullYear());</script> | Bu şablon <i class="icon-heart color-danger"
-            aria-hidden="true"></i> ile <a href="https://colorlib.com" target="_blank">Colorlib</a> tarafından
-          yapılmıştır.
-        </p>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Tüm Hakları Saklıdır &copy;
+            <script>document.write(new Date().getFullYear());</script> | Bu şablon <i class="icon-heart color-danger"
+              aria-hidden="true"></i> ile <a href="https://colorlib.com" target="_blank">Colorlib</a> tarafından
+            yapılmıştır.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-    <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-    <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-  </svg></div>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="js/google-map.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
